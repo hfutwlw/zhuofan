@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="persistent">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_cvdmEGykEeSqLqkAn6WScw" name="BaseService">
+    <ownedOperation xmi:id="_h4sJsGykEeSqLqkAn6WScw" name="save"/>
+    <ownedOperation xmi:id="_nISbEmykEeSqLqkAn6WScw" name="update"/>
+    <ownedOperation xmi:id="_oWrg0mykEeSqLqkAn6WScw" name="delete"/>
+    <ownedOperation xmi:id="_pCQ0cmykEeSqLqkAn6WScw" name="...."/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_zthdSGykEeSqLqkAn6WScw" name="Domain_A_Inter">
+    <generalization xmi:id="_FFLso2ylEeSqLqkAn6WScw" general="_cvdmEGykEeSqLqkAn6WScw"/>
+    <generalization xmi:id="_BM1d42ysEeSqLqkAn6WScw" general="_cvdmEGykEeSqLqkAn6WScw"/>
+    <generalization xmi:id="_E5lcc2ysEeSqLqkAn6WScw" general="_cvdmEGykEeSqLqkAn6WScw"/>
+    <generalization xmi:id="_Mfdos2ysEeSqLqkAn6WScw" general="_cvdmEGykEeSqLqkAn6WScw"/>
+    <generalization xmi:id="_Ob0ns2ysEeSqLqkAn6WScw" general="_cvdmEGykEeSqLqkAn6WScw"/>
+    <ownedOperation xmi:id="_8DN84GykEeSqLqkAn6WScw" name="other_A_Methed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JNwEgGylEeSqLqkAn6WScw" name="BaseDao">
+    <ownedOperation xmi:id="_Q5wG4GylEeSqLqkAn6WScw" name="save"/>
+    <ownedOperation xmi:id="_TOuaMmylEeSqLqkAn6WScw" name="update"/>
+    <ownedOperation xmi:id="_U5WI8mylEeSqLqkAn6WScw" name="delete"/>
+    <ownedOperation xmi:id="_WjLNgGylEeSqLqkAn6WScw" name="...."/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_loNS8GylEeSqLqkAn6WScw" name="Domain_A_Impl" clientDependency="_vYPppGylEeSqLqkAn6WScw _mEmelGymEeSqLqkAn6WScw">
+    <generalization xmi:id="_-zXT02ylEeSqLqkAn6WScw" general="_zL13GGylEeSqLqkAn6WScw"/>
+    <generalization xmi:id="_YvuLU2yqEeSqLqkAn6WScw" general="_OrrQUGymEeSqLqkAn6WScw"/>
+    <interfaceRealization xmi:id="_vYPppGylEeSqLqkAn6WScw" name="InterfaceRealization1" supplier="_zthdSGykEeSqLqkAn6WScw" client="_loNS8GylEeSqLqkAn6WScw" contract="_zthdSGykEeSqLqkAn6WScw"/>
+    <ownedOperation xmi:id="_qJ58gmylEeSqLqkAn6WScw" name="other_A_Methed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zL13GGylEeSqLqkAn6WScw" name="Domain_A_Dao">
+    <generalization xmi:id="_9iTUlWylEeSqLqkAn6WScw" general="_JNwEgGylEeSqLqkAn6WScw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OrrQUGymEeSqLqkAn6WScw" name="BaseImpl" clientDependency="_iEuIpGymEeSqLqkAn6WScw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_iEuIpGymEeSqLqkAn6WScw" name="Dependency1" supplier="_JNwEgGylEeSqLqkAn6WScw" client="_OrrQUGymEeSqLqkAn6WScw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_mEmelGymEeSqLqkAn6WScw" name="Dependency2" supplier="_zL13GGylEeSqLqkAn6WScw" client="_loNS8GylEeSqLqkAn6WScw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_SW3WYGyrEeSqLqkAn6WScw" name="Domain_B_Inter">
+    <generalization xmi:id="_zzBkJGyrEeSqLqkAn6WScw" general="_cvdmEGykEeSqLqkAn6WScw"/>
+    <ownedOperation xmi:id="_Wj8a0myrEeSqLqkAn6WScw" name="other_B_Methed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_c3LTeGyrEeSqLqkAn6WScw" name="Domain_B_Impl" clientDependency="_Vx2aFGysEeSqLqkAn6WScw _WnWetWysEeSqLqkAn6WScw">
+    <generalization xmi:id="_hCKQs2ysEeSqLqkAn6WScw" general="_OrrQUGymEeSqLqkAn6WScw"/>
+    <interfaceRealization xmi:id="_Vx2aFGysEeSqLqkAn6WScw" name="InterfaceRealization1" supplier="_SW3WYGyrEeSqLqkAn6WScw" client="_c3LTeGyrEeSqLqkAn6WScw" contract="_SW3WYGyrEeSqLqkAn6WScw"/>
+    <ownedOperation xmi:id="_gOOu0myrEeSqLqkAn6WScw" name="other_B_Methed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ry_yiGyrEeSqLqkAn6WScw" name="Domain_B_Dao">
+    <generalization xmi:id="_aIm-82ysEeSqLqkAn6WScw" general="_JNwEgGylEeSqLqkAn6WScw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_WnWetWysEeSqLqkAn6WScw" name="Dependency3" supplier="_ry_yiGyrEeSqLqkAn6WScw" client="_c3LTeGyrEeSqLqkAn6WScw"/>
+</uml:Model>

@@ -1,0 +1,11 @@
+com.zhuofan.database.valid
+com.zhuofan.dataquery.action
+com.zhuofan.dataquery.dao
+com.zhuofan.dataquery.domain
+com.zhuofan.dataquery.service.impl
+com.zhuofan.dataquery.service.inter
+com.zhuofan.domainreturn
+com.zhuofan.excel.export
+com.zhuofan.msg
+com.zhuofan.test
+com.zhuofan.util.dataquery.xml
