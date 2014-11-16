@@ -5,7 +5,7 @@
 
 <struts>
 	<constant name="struts.devMode" value="true" />
-<constant name="struts.convention.action.package" value="com.hfut.action.*"/>
+<constant name="struts.convention.action.package" value="com.*.action"/>
 <constant name="struts.convention.result.path" value="/WEB-INF/jsp/"></constant>
 <package name="kk" namespace="/" extends="struts-default,convention-default,json-default" ></package>
 </struts>

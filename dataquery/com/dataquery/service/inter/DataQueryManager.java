@@ -11,7 +11,7 @@ import com.msg.DatabaseManageMsg;
  * @author linpeng123l
  *
  */
-public interface DataQueryService extends BaseService<DataQuery>{
+public interface DataQueryManager extends BaseService<DataQuery>{
 	
 	/**
 	 * 添加一个数据提取方案，并且分别保存他的三个子类表
