@@ -1,13 +1,27 @@
 package com.dataquery.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import com.domain.BaseEntity;
 import com.excel.ExportDomainExcelInter;
-
+@Entity
+@Table(name="DATA_QUERY_FIELD")
 public class DataQueryField extends BaseEntity implements ExportDomainExcelInter{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2271078587822589157L;
+	@Column(name="_NAME",length=100)
 	private String name;
-     private String chineseName;
+	@Column(name="CH_NAME",length=100)
+     private String chName;
+	@Column(name="HQL",length=300)
      private String hql;
+	@Column(name="_TYPE",length=100)
      private String type;
+	@Column(name="DATA_QUERY_NAME",length=100)
      private String dataQueryName;	
 	public String getName() {
 		return name;
@@ -15,11 +29,12 @@ public class DataQueryField extends BaseEntity implements ExportDomainExcelInter
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getChineseName() {
-		return chineseName;
+	
+	public String getChName() {
+		return chName;
 	}
-	public void setChineseName(String chineseName) {
-		this.chineseName = chineseName;
+	public void setChName(String chName) {
+		this.chName = chName;
 	}
 	public String getHql() {
 		return hql;
@@ -45,6 +60,6 @@ public class DataQueryField extends BaseEntity implements ExportDomainExcelInter
 	}
 	@Override
 	public String[] excelData() {
-		return new String[]{name,chineseName};
+		return new String[]{name,chName};
 	}
 }

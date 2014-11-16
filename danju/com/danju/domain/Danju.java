@@ -1,26 +1,44 @@
 package com.danju.domain;
 
-import java.sql.Timestamp;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.excel.ExportDomainExcelInter;
 
 
 /**
  * Danju entity. @author MyEclipse Persistence Tools
  */
+@Entity
+@Table(name="DANJU")
+public class Danju implements java.io.Serializable,ExportDomainExcelInter {
 
-public class Danju implements java.io.Serializable {
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 316061454543547257L;
 	// Fields
 
-	private Integer id;
+	@Column(name="DANJU_NAME",length=100)
 	private String danjuName;
-	private String danjuChineseName;
+	@Column(name="DANJU_CH_NAME",length=100)
+	private String danjuChName;
+	@Column(name="_TYPE",length=100)
 	private String type;
+	@Column(name="CREATE_PEOPLE",length=100)
 	private String createPeople;
-	private Timestamp createDate;
-	private String modifiePeople;
-	private Timestamp modifieDate;
+	@Column(name="CREATE_DATE",length=100)
+	private String createDate;
+	@Column(name="MODIFY_NAME",length=100)
+	private String modifyPeople;
+	@Column(name="MODIFY_DATE",length=100)
+	private String modifyDate;
+	@Column(name="INFO",length=100)
 	private String info;
+	@Column(name="XML",length=10000)
 	private String xml;
+	@Column(name="STRUTS2",length=9000)
 	private String struts2;
 
 	// Constructors
@@ -29,47 +47,60 @@ public class Danju implements java.io.Serializable {
 	public Danju() {
 	}
 
-	/** full constructor */
-	public Danju(String danjuName, String danjuChineseName, String type,
-			String createPeople, Timestamp createDate, String modifiePeople,
-			Timestamp modifieDate, String info, String xml, String struts2) {
-		this.danjuName = danjuName;
-		this.danjuChineseName = danjuChineseName;
-		this.type = type;
-		this.createPeople = createPeople;
-		this.createDate = createDate;
-		this.modifiePeople = modifiePeople;
-		this.modifieDate = modifieDate;
-		this.info = info;
-		this.xml = xml;
-		this.struts2 = struts2;
-	}
-
+	
 	// Property accessors
 
-	public Integer getId() {
-		return this.id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	
 
 	public String getDanjuName() {
 		return this.danjuName;
 	}
 
+	public String getDanjuChName() {
+		return danjuChName;
+	}
+
+
+	public void setDanjuChName(String danjuChName) {
+		this.danjuChName = danjuChName;
+	}
+
+
+	public String getCreateDate() {
+		return createDate;
+	}
+
+
+	public void setCreateDate(String createDate) {
+		this.createDate = createDate;
+	}
+
+
+	public String getModifyPeople() {
+		return modifyPeople;
+	}
+
+
+	public void setModifyPeople(String modifyPeople) {
+		this.modifyPeople = modifyPeople;
+	}
+
+
+	public String getModifyDate() {
+		return modifyDate;
+	}
+
+
+	public void setModifyDate(String modifyDate) {
+		this.modifyDate = modifyDate;
+	}
+
+
 	public void setDanjuName(String danjuName) {
 		this.danjuName = danjuName;
 	}
 
-	public String getDanjuChineseName() {
-		return this.danjuChineseName;
-	}
-
-	public void setDanjuChineseName(String danjuChineseName) {
-		this.danjuChineseName = danjuChineseName;
-	}
+	
 
 	public String getType() {
 		return this.type;
@@ -87,30 +118,7 @@ public class Danju implements java.io.Serializable {
 		this.createPeople = createPeople;
 	}
 
-	public Timestamp getCreateDate() {
-		return this.createDate;
-	}
-
-	public void setCreateDate(Timestamp createDate) {
-		this.createDate = createDate;
-	}
-
-	public String getModifiePeople() {
-		return this.modifiePeople;
-	}
-
-	public void setModifiePeople(String modifiePeople) {
-		this.modifiePeople = modifiePeople;
-	}
-
-	public Timestamp getModifieDate() {
-		return this.modifieDate;
-	}
-
-	public void setModifieDate(Timestamp modifieDate) {
-		this.modifieDate = modifieDate;
-	}
-
+	
 	public String getInfo() {
 		return this.info;
 	}
@@ -135,10 +143,10 @@ public class Danju implements java.io.Serializable {
 		this.struts2 = struts2;
 	}
 	public String[] excelData() {
-		return new String[]{danjuName,danjuChineseName,type,createPeople,"",modifiePeople,"",info,xml,struts2};
+		return new String[]{danjuName,danjuChName,type,createPeople,"",modifyPeople,"",info,xml,struts2};
 	}
 
-	public static String[] excelTitle() {
+	public String[] excelTitle() {
 		return new String[]{"单据名","单据中文名","单据类型","单据创建人","单据创建日期","单据修改人","单据修改日期","但据说明","单据xml文件","单据struts2文件"};
 	}
 

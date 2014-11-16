@@ -11,8 +11,6 @@ public class DanjuAction extends ActionSupport{
 	@Autowired
 	private DanjuManage danjuManage;
 	
-	public String execute(){
-		danjuManage.save();
-	}
+	
 
 }

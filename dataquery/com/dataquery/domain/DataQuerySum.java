@@ -1,17 +1,33 @@
 package com.dataquery.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import com.domain.BaseEntity;
 import com.excel.ExportDomainExcelInter;
-
+@Entity
+@Table(name="DATA_QUERY_SUM")
 public class DataQuerySum extends BaseEntity implements ExportDomainExcelInter{
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -9070556447335444215L;
+	@Column(name="DATA_QUERY_NAME",length=100)
 	private String dataQueryName;
-	private String dataQueryChineseName;
-	private Integer pageSize;
+	@Column(name="DATA_QUERY_CH_NAME",length=100)
+	private String dataQueryChName;
+	@Column(name="PAGE_SIZE",length=100)
+	private int pageSize;
+	@Column(name="RETURN_VALUE",length=100)
 	private String retval;
+	@Column(name="HQL",length=300)
 	private String hql;
-	private Integer width;
-	private Integer height;
+	@Column(name="WIDTH",length=100)
+	private int width;
+	@Column(name="HEIGHT",length=100)
+	private int height;
+	@Column(name="FAST",length=2)
 	private boolean fast;	
 	public String getDataQueryName() {
 		return dataQueryName;
@@ -19,18 +35,23 @@ public class DataQuerySum extends BaseEntity implements ExportDomainExcelInter{
 	public void setDataQueryName(String dataQueryName) {
 		this.dataQueryName = dataQueryName;
 	}
-	public String getDataQueryChineseName() {
-		return dataQueryChineseName;
+	
+	public String getDataQueryChName() {
+		return dataQueryChName;
 	}
-	public void setDataQueryChineseName(String dataQueryChineseName) {
-		this.dataQueryChineseName = dataQueryChineseName;
+	public void setDataQueryChName(String dataQueryChName) {
+		this.dataQueryChName = dataQueryChName;
 	}
-	public Integer getPageSize() {
-		return pageSize;
-	}
-	public void setPageSize(Integer pageSize) {
+	public void setPageSize(int pageSize) {
 		this.pageSize = pageSize;
 	}
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	
 	public String getRetval() {
 		return retval;
 	}
@@ -43,18 +64,8 @@ public class DataQuerySum extends BaseEntity implements ExportDomainExcelInter{
 	public void setHql(String hql) {
 		this.hql = hql;
 	}
-	public Integer getWidth() {
-		return width;
-	}
-	public void setWidth(Integer width) {
-		this.width = width;
-	}
-	public Integer getHeight() {
-		return height;
-	}
-	public void setHeight(Integer height) {
-		this.height = height;
-	}
+	
+	
 	public boolean isFast() {
 		return fast;
 	}
@@ -67,6 +78,6 @@ public class DataQuerySum extends BaseEntity implements ExportDomainExcelInter{
 	}
 	@Override
 	public String[] excelData() {
-		return new String[]{dataQueryName,dataQueryChineseName};
+		return new String[]{dataQueryName,dataQueryChName};
 	}
 }

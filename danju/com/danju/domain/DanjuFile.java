@@ -1,18 +1,36 @@
 package com.danju.domain;
 
 import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.domain.BaseEntity;
 /**
  * 最终根据用户传入的xml解析生成的项目文件
  * @author linpeng123l
  *
  */
-public class DanjuFile {
+@Entity
+@Table(name="DANJU_FILE")
+public class DanjuFile extends BaseEntity {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3653233540076155448L;
+	@Column(name="FILE_NAME",length=100)
 	private String fileName;
+	@Column(name="FILE_TYPE",length=100)
 	private String fileType;
 	/** 文件后缀 */
+	@Column(name="FILE_SUFFIX",length=100)
 	private String fileSuffix;
+	@Column(name="FILE_PATH",length=100)
 	private String filePath;
+	@Column(name="GENERATE_TIME",length=100)
 	private Date generateTime;
+	
 	public String getFileName() {
 		return fileName;
 	}

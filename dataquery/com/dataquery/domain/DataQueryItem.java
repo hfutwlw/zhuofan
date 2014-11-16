@@ -1,17 +1,33 @@
 package com.dataquery.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import com.domain.BaseEntity;
 import com.excel.ExportDomainExcelInter;
-
+@Entity
+@Table(name="DATA_QUERY_ITEM")
 public class DataQueryItem extends BaseEntity implements ExportDomainExcelInter{
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5007185376244571748L;
+	@Column(name="_TYPE",length=100)
 	private String type;
+	@Column(name="_NAME",length=100)
 	private String name;
-	private String chineseName;
+	@Column(name="CH_NAME",length=100)
+	private String chName;
+	@Column(name="_HIDDEN",length=2)
 	private boolean hidden;
-	private Integer width;
+	@Column(name="WIDTH",length=10)
+	private int width;
+	@Column(name="COLOR",length=100)
 	private String color;
+	@Column(name="RENDERER",length=200)
 	private String renderer;
+	@Column(name="DATA_QUERY_NAME",length=100)
 	private String dataQueryName;
 	
 	public String getType() {
@@ -26,24 +42,22 @@ public class DataQueryItem extends BaseEntity implements ExportDomainExcelInter{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getChineseName() {
-		return chineseName;
+	
+	public String getChName() {
+		return chName;
 	}
-	public void setChineseName(String chineseName) {
-		this.chineseName = chineseName;
+	public void setChName(String chName) {
+		this.chName = chName;
+	}
+	public void setWidth(int width) {
+		this.width = width;
 	}
 	public boolean isHidden() {
 		return hidden;
 	}
 	public void setHidden(boolean hidden) {
 		this.hidden = hidden;
-	}
-	public Integer getWidth() {
-		return width;
-	}
-	public void setWidth(Integer width) {
-		this.width = width;
-	}
+	}	
 	public String getColor() {
 		return color;
 	}
@@ -68,6 +82,6 @@ public class DataQueryItem extends BaseEntity implements ExportDomainExcelInter{
 	}
 	@Override
 	public String[] excelData() {
-		return new String[]{name,chineseName};
+		return new String[]{name,chName};
 	}
 }
