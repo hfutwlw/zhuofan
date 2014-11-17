@@ -80,8 +80,7 @@
 </tx:attributes>
 </tx:advice>
  <aop:config >
-<aop:pointcut id="ServiceOperation" expression="execution(* com.*.service.impl.*(..))"/>
-<aop:pointcut id="ServiceOperation2" expression="execution(* com.service.impl.*(..))"/>
+<aop:pointcut id="ServiceOperation" expression="execution(* com..*.*(..))"/>
 <aop:advisor advice-ref="txAdvice" pointcut-ref="ServiceOperation"/>
 </aop:config>
 </beans>
