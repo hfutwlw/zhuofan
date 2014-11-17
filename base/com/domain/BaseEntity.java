@@ -28,7 +28,7 @@ public class BaseEntity implements Serializable{
 	private int dataStatus = 1;
 	@GenericGenerator(name = "generator", strategy = "uuid")
 	@Id
-	@Column(name = "id", unique = true, nullable = false, length = 50)
+	@Column(name = "id", nullable = false, length = 50)
 	public String getId() {
 		if("".equals(id) || null == id)
 			id = UUID.randomUUID().toString();

@@ -45,7 +45,8 @@ public class DanjuAction extends ActionSupport{
 	@Override
 	@Action(value="/danju", results = { @Result(name = "success", type = "json") })
 	public String execute() throws Exception {
-		this.getList();		
+		this.getList();
+		System.out.println(danjuManage.getClass().getSimpleName());
 		return SUCCESS;
 	}
 	
