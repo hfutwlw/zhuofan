@@ -28,7 +28,7 @@ public class BaseDao<T extends Serializable>{
 	private Session session;
 	@SuppressWarnings("rawtypes")
 	private Class entityClass;
-	private String pkname;
+	private String pkname="id";
 	private final String HQL_LIST_ALL;
 	private final String HQL_COUNT_ALL;
 	@SuppressWarnings("rawtypes")
@@ -40,10 +40,8 @@ public class BaseDao<T extends Serializable>{
 		this.entityClass = entityClass;
 	}
 
-	public Session getSession(){
-		if(null==session)
-		session = sessionFactory.getCurrentSession();
-		
+	public Session getSession(){		
+		session = sessionFactory.getCurrentSession();		
 		return session;
 	}
 
@@ -78,6 +76,7 @@ public class BaseDao<T extends Serializable>{
 			
 			if(field.isAnnotationPresent(Id.class)){
 			this.pkname=field.getName();
+			System.out.println(this.pkname);
 			break;
 			}
 		}

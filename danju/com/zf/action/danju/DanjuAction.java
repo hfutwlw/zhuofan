@@ -49,8 +49,7 @@ public class DanjuAction extends ActionSupport{
 		this.getList();
 		Danju danju = new Danju();
 		danju.setInfo("first danju");
-		danjuManage.findbyName("dfg");
-		System.out.println(danjuManage.getClass().getSimpleName());
+		danjuManage.save(danju);		
 		return SUCCESS;
 	}
 	
