@@ -1,6 +1,6 @@
 package com.javaclass;
 
-import com.util.MyStringBuffer;
+import com.string.util.MyStringBuffer;
 
 
 public class ClassProperty {

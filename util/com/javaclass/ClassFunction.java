@@ -3,7 +3,7 @@ package com.javaclass;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.util.MyStringBuffer;
+import com.string.util.MyStringBuffer;
 
 
 public class ClassFunction {

@@ -1,4 +1,4 @@
-package com.util;
+package com.string.util;
 
 public class MyStringBuffer{
 	private StringBuffer stringBuffer;

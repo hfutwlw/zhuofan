@@ -1,4 +1,4 @@
-package com.util;
+package com.database.util;
 
 import java.util.List;
 import java.util.ResourceBundle;
