@@ -32,7 +32,7 @@
     <context:include-filter type="regex" expression="com.*.action"/>
 	</context:component-scan>
 	 -->
-<context:component-scan base-package="com"/>
+<context:component-scan base-package="com.zf.*"/>
 	   <!-- 数据源配置,使用应用内的jdbc数据库连接池 -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${jdbc.driver}" />
@@ -60,9 +60,7 @@
 		</property>
 		<property name="packagesToScan">
 				<list>
-				<value>com.danju.domain</value>
-				<value>com.dataquery.domain</value>
-				<value>com.domain</value>
+				<value>com.zf.domain</value>				
 				</list>
 		</property>
 	</bean>
@@ -80,7 +78,7 @@
 </tx:attributes>
 </tx:advice>
  <aop:config >
-<aop:pointcut id="ServiceOperation" expression="execution(* com..*.*(..))"/>
+<aop:pointcut id="ServiceOperation" expression="execution(* com.zf.serviceManagerImpl.*.*(..))"/>
 <aop:advisor advice-ref="txAdvice" pointcut-ref="ServiceOperation"/>
 </aop:config>
 </beans>

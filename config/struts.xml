@@ -5,7 +5,7 @@
 
 <struts>
 	<constant name="struts.devMode" value="true" />
-<constant name="struts.convention.action.package" value="com.danju.action"/>
+<constant name="struts.convention.action.package" value="com.zf.action.*"/>
 <constant name="struts.convention.result.path" value="/WEB-INF/jsp/"></constant>
 <package name="default" namespace="/" extends="convention-default" ></package>
 </struts>
