@@ -1,7 +1,7 @@
 /**
  * This class is the view model for the Main view of the application.
  */
-Ext.define('app.view.main.MainModel', {
+Ext.define('ZhuoFan.view.main.MainModel', {
     extend: 'Ext.app.ViewModel',
 
     alias: 'viewmodel.main',

@@ -4,7 +4,7 @@
  * `{@Ext.data.field.Field#cfg-unique unique}` to `true`.
  *
  * While this type of association helps handle both sides of the association properly, it
- * is problematic to enforce the uniqueness aspect. If the tableInfo were to enforce this
+ * is problematic to enforce the uniqueness aspect. If the database were to enforce this
  * uniqueness constraint, it would limit the field to be non-nullable. Even if this were
  * acceptable, this also creates challenges for a "soft-delete" strategy where records are
  * kept in the table, but only marked as "deleted" in a field.

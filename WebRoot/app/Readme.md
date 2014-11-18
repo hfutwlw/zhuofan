@@ -1,4 +1,4 @@
-# app
+# ZhuoFan
 
 This folder is primarily a container for the top-level pieces of the application.
 While you can remove some files and folders that this application does not use,
@@ -32,21 +32,21 @@ process.
 
 # Other Folders
 
-## app/app
+## ZhuoFan/app
 
 This folder contains the JavaScript files for the application.
 
-## app/resources
+## ZhuoFan/resources
 
 This folder contains static resources (typically an `"images"` folder as well).
 
-## app/overrides
+## ZhuoFan/overrides
 
 This folder contains override classes. All overrides in this folder will be 
 automatically included in application builds if the target class of the override
 is loaded.
 
-## app/sass
+## ZhuoFan/sass
 
-This folder contains the styling for the application's views. See app/sass/Readme.md
+This folder contains the styling for the application's views. See ZhuoFan/sass/Readme.md
 for details.

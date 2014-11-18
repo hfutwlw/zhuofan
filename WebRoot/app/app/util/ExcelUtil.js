@@ -1,4 +1,4 @@
-Ext.define("app.util.ExcelUtil",{
+Ext.define("ZhuoFan.util.ExcelUtil",{
 	singleton : true,
 	alternateClassName : "ExcelUtil",
 

@@ -1,4 +1,4 @@
-Ext.define("app.view.main.window.ChangePasswordWin",{
+Ext.define("ZhuoFan.view.main.window.ChangePasswordWin",{
 	extend : "Ext.window.Window",
 	alias : "widget.mainchangepasswordwin",
 	controller : "main",

@@ -1,8 +1,8 @@
-Ext.define("app.view.main.region.West",{
+Ext.define("ZhuoFan.view.main.region.West",{
 	extend : "Ext.panel.Panel",
 	alias : "widget.mainwest",
 	
-	uses : ['app.view.main.menu.MainTree'],
+	uses : ['ZhuoFan.view.main.menu.MainTree'],
 	title : "卓凡软件企业平台",
 	glyph : 0xf0c9,
 	

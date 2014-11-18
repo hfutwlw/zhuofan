@@ -16,19 +16,19 @@ mixins, etc.).
 
 This folder contains Sass files defining CSS rules corresponding to classes
 included in the application's JavaScript code build. By default, files in this 
-folder are mapped to the application's root namespace, 'app'. This is set in
+folder are mapped to the application's root namespace, 'ZhuoFan'. This is set in
 `"app.json"`:
 
     "sass": {
-        "namespace": "app"
+        "namespace": "ZhuoFan"
     }
 
 ### ./sass/var
 
 This folder contains Sass files defining Sass variables corresponding to classes
 included in the application's JavaScript code build. By default, files in this 
-folder are mapped to the application's root namespace, 'app' in the same way
-as `"app/sass/src"`.
+folder are mapped to the application's root namespace, 'ZhuoFan' in the same way
+as `"ZhuoFan/sass/src"`.
 
 ## Slicing
 

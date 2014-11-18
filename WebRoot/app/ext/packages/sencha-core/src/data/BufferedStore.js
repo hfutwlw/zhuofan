@@ -1,7 +1,7 @@
 /**
  * A BufferedStore maintains a sparsely populated map of pages corresponding to an extremely large server-side dataset.
  *
- * Use a BufferedStore when the dataset size is so large that the tableInfo and network latency, and client memory requirements
+ * Use a BufferedStore when the dataset size is so large that the database and network latency, and client memory requirements
  * preclude caching the entire dataset in a regular {@link Ext.data.Store Store}.
  *
  * When using a BufferedStore *not all of the dataset is present in the client*. Only pages which have been

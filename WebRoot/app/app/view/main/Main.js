@@ -1,14 +1,14 @@
 /**
  * 主界面类
  */
-Ext.define('app.view.main.Main', {
+Ext.define('ZhuoFan.view.main.Main', {
 			extend : 'Ext.container.Container',
 
 			xtype : 'app-main',
 
-			uses : ["app.view.main.region.West", "app.view.main.region.North",
-					"app.view.main.region.South",
-					"app.component.ButtonTransparent"],
+			uses : ["ZhuoFan.view.main.region.West", "ZhuoFan.view.main.region.North",
+					"ZhuoFan.view.main.region.South",
+					"ZhuoFan.component.ButtonTransparent"],
 
 			controller : 'main',
 			viewModel : {

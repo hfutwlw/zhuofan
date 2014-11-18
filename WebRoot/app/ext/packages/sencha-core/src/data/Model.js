@@ -542,8 +542,8 @@ Ext.define('Ext.data.Model', {
 
     /**
      * @property {Boolean} phantom
-     * True when the record does not yet exist in a server-side tableInfo. Any record which
-     * has a real tableInfo identity set as its `idProperty` is NOT a phantom -- it's real.
+     * True when the record does not yet exist in a server-side database. Any record which
+     * has a real database identity set as its `idProperty` is NOT a phantom -- it's real.
      */
     phantom: false,
 
@@ -2162,7 +2162,7 @@ Ext.define('Ext.data.Model', {
         /**
          * Copies data from the passed record into this record. If the passed record is undefined, does nothing.
          *
-         * If this is a phantom record (represented only in the client, with no corresponding tableInfo entry), and
+         * If this is a phantom record (represented only in the client, with no corresponding database entry), and
          * the source record is not a phantom, then this record acquires the id of the source record.
          *
          * @param {Ext.data.Model} sourceRecord The record to copy data from.

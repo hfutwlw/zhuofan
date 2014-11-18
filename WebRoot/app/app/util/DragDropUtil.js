@@ -1,4 +1,4 @@
-Ext.define("app.util.DragDropUtil",{
+Ext.define("ZhuoFan.util.DragDropUtil",{
 	singleton : true,
 	alternateClassName : "DragDropUtil",
 	

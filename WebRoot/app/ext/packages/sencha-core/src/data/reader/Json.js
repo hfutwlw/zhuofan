@@ -75,7 +75,7 @@
  *         rootProperty: 'users'
  *     }
  *
- * Sometimes the JSON structure is even more complicated. Document tableInfos like CouchDB often provide metadata
+ * Sometimes the JSON structure is even more complicated. Document databases like CouchDB often provide metadata
  * around each record inside a nested structure like this:
  *
  *     {

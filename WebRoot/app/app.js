@@ -4,14 +4,14 @@
  * Sencha Cmd when upgrading.
  */
 Ext.application({
-    name: 'app',
+    name: 'ZhuoFan',
 
-    extend: 'app.Application',
+    extend: 'ZhuoFan.Application',
     
-    autoCreateViewport: 'app.view.main.Main'
+    autoCreateViewport: 'ZhuoFan.view.main.Main'
 	
     //-------------------------------------------------------------------------
-    // Most customizations should be made to app.Application. If you need to
+    // Most customizations should be made to ZhuoFan.Application. If you need to
     // customize this file, doing so below this section reduces the likelihood
     // of merge conflicts when upgrading to new versions of Sencha Cmd.
     //-------------------------------------------------------------------------

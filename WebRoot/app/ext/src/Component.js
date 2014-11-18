@@ -59,7 +59,7 @@
  *
  * The Component above creates its encapsulating `div` upon render, and use the configured
  * HTML as content. More complex internal structure may be created using the
- * {@link #renderTpl} configuration, although to display tableInfo-derived mass data, it is
+ * {@link #renderTpl} configuration, although to display database-derived mass data, it is
  * recommended that an ExtJS data-backed Component such as a {@link Ext.view.View View},
  * {@link Ext.grid.Panel GridPanel}, or {@link Ext.tree.Panel TreePanel} be used.
  *

@@ -1,4 +1,4 @@
-Ext.define("app.net.MyRequest",{
+Ext.define("ZhuoFan.net.MyRequest",{
 	singleton : true,
 	alternateClassName : "MyRequest",
 	

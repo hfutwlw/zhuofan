@@ -2,7 +2,7 @@
     /**
      * The application's namespace.
      */
-    "name": "app",
+    "name": "ZhuoFan",
 
     /**
      * Comma-separated string with the paths of directories or files to search. Any classes
@@ -40,13 +40,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "app.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "app.view" then
+         * sass/src and sass/var directories. For example, "ZhuoFan.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "ZhuoFan.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "app.view.Foo" to "sass/src/app/view/Foo.scss".
+         * "ZhuoFan.view.Foo" to "sass/src/ZhuoFan/view/Foo.scss".
          */
-        "namespace": "app"
+        "namespace": "ZhuoFan"
     },
 
     /**
@@ -57,7 +57,7 @@
 
     /**
      * The absolute URL to this application in development environment, i.e: the URL to run
-     * this application on your web browser, e.g: "http://localhost/app/index.html".
+     * this application on your web browser, e.g: "http://localhost/ZhuoFan/index.html".
      *
      * This value is needed when build to resolve your application's dependencies if it
      * requires server-side resources. This setting is only used if you enable dynamic
@@ -191,5 +191,5 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+    "id": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
 }

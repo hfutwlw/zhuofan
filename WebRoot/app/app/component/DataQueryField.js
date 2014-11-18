@@ -1,4 +1,4 @@
-Ext.define("app.component.DataQueryField", {
+Ext.define("ZhuoFan.component.DataQueryField", {
 			extend : "Ext.form.field.Text",
 			alias : 'widget.dataQueryField',
 			alternateClassName : "DataQueryField",

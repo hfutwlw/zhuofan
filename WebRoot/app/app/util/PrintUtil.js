@@ -1,4 +1,4 @@
-Ext.define("app.util.PrintUtil",{
+Ext.define("ZhuoFan.util.PrintUtil",{
 	statics : {
 		print : function (grid) {  
 
@@ -13,7 +13,7 @@ Ext.define("app.util.PrintUtil",{
 
 			xls.visible = true; // 设置excel为可见  
 			var xlBook = xls.Workbooks.Add;  
-			var xlSheet = xlBook.Worksheets(1);  
+			var xlSheet = xlBook.Worksheets(1);   
 
 			var temp_obj = [];  
 			// 只下载没有隐藏的列(isHidden()为true表示隐藏,其他都为显示)  

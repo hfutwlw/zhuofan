@@ -1,4 +1,4 @@
-Ext.define("app.view.main.menu.MainTree",{
+Ext.define("ZhuoFan.view.main.menu.MainTree",{
 	extend : "Ext.tree.Panel",
 
 	controller : "main",

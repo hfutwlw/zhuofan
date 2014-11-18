@@ -1,3 +1,3 @@
-Ext.define('app.controller.Main', {
+Ext.define('ZhuoFan.controller.Main', {
     extend: 'Ext.app.Controller'
 });

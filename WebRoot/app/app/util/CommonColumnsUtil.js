@@ -1,4 +1,4 @@
-Ext.define("app.util.CommonColumnsUtil",{
+Ext.define("ZhuoFan.util.CommonColumnsUtil",{
 	//单例模式，可直接使用类名调用
 	singleton : true,
 	//类别名可直接使用ColumnsUtil调用方法

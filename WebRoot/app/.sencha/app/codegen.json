@@ -45,10 +45,10 @@
       "source": "build.properties.merge",
       "version": "d4613dc19be3ddb60e7ff5716e28c8b15d954f3a",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -59,22 +59,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     ".sencha/app/development.properties": {
       "source": "development.properties.merge",
       "version": "c45c602c9b6f6f73cace183e9f0bf09c00a3ccf6",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -85,22 +85,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     ".sencha/app/native.properties": {
       "source": "native.properties.merge",
       "version": "2c8c063f9588eecff09624782d7369a8a000d61c",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -111,22 +111,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     ".sencha/app/package.properties": {
       "source": "package.properties.merge",
       "version": "c6c1fb2fb1dda28480ad0f6e5caffc9b97d196ae",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -137,22 +137,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     ".sencha/app/production.properties": {
       "source": "production.properties.merge",
       "version": "cbdf9712e9b5d37cecb4d0530ba1fccd0ed004a3",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -163,22 +163,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     ".sencha/app/sencha.cfg": {
       "source": "sencha.cfg.tpl.merge",
       "version": "7fcda09395078f5fc4ca0f1e82ea9bda8bf41f0e",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -189,22 +189,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     ".sencha/app/testing.properties": {
       "source": "testing.properties.merge",
       "version": "360e715956c81757e53736789fe20be045acb544",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -215,22 +215,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     "app.js": {
       "source": "app.js.tpl.merge",
       "version": "f8d6fce7034df68f1e1ae8d7980db28e3b143501",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -241,22 +241,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     "app.json": {
       "source": "app.json.tpl.merge",
       "version": "6f874cf3761f0053697b20cf449cddff5496a400",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -267,22 +267,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     "index.html": {
       "source": "index.html.tpl.merge",
       "version": "ea9d2abd39f20647673004775c9a261bb0bb9a06",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -293,22 +293,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     "sass/config.rb": {
       "source": "config.rb.tpl.merge",
       "version": "33f446bd02c3fd24eb27891582eff6a2e789796b",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -319,22 +319,22 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     "sass/example/theme.html": {
       "source": "theme.html.tpl.merge",
       "version": "32f685a8af28baafcc7999862d0bd1f25df0e48b",
       "parameters": {
-        "viewNamespace": "app.view",
+        "viewNamespace": "ZhuoFan.view",
         "frameworkName": "ext",
-        "appName": "app",
-        "controllerNamespace": "app.controller",
+        "appName": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "frameworkPath": "ext",
         "packagesRelPath": "ext/packages",
         "appModels": "",
@@ -345,12 +345,12 @@
         "senchadir": ".sencha",
         "controllerName": "Main",
         "appStores": "",
-        "name": "app",
+        "name": "ZhuoFan",
         "appViews": "",
         "appControllers": "",
         "controllerFileName": "Main",
-        "modelNamespace": "app.model",
-        "uniqueId": "484bec2d-cbec-4e5d-907d-c49100d07df1"
+        "modelNamespace": "ZhuoFan.model",
+        "uniqueId": "bc5b6002-fbfd-4ec4-ba9a-367c77cd0cd2"
       }
     },
     "app/controller/Main.js": {
@@ -358,10 +358,10 @@
       "version": "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188",
       "parameters": {
         "library": "all",
-        "appName": "app",
+        "appName": "ZhuoFan",
         "controllerName": "Main",
-        "name": "app",
-        "controllerNamespace": "app.controller",
+        "name": "ZhuoFan",
+        "controllerNamespace": "ZhuoFan.controller",
         "controllerFileName": "Main"
       }
     }

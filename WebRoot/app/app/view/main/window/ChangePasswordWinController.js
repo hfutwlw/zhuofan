@@ -1,7 +1,7 @@
 /**
  * 控制器
  */
-Ext.define('app.view.main.MainController', {
+Ext.define('ZhuoFan.view.main.MainController', {
 	extend : 'Ext.app.ViewController',
 
 	alias : 'controller.changePasswordWin',

@@ -398,9 +398,9 @@ Ext.feature = {
             return 'geolocation' in window.navigator;
         }
     },{
-        name: 'SqlTableInfo',
+        name: 'SqlDatabase',
         fn: function() {
-            return 'openTableInfo' in window;
+            return 'openDatabase' in window;
         }
     },{
         name: 'WebSockets',

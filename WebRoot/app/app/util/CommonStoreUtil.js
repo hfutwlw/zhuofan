@@ -1,4 +1,4 @@
-Ext.define("app.util.CommonStoreUtil",{
+Ext.define("ZhuoFan.util.CommonStoreUtil",{
 	
 	singleton : true,
 	alternateClassName : "CommonStoreUtil",

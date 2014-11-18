@@ -424,7 +424,7 @@ Ext.define('Ext.data.field.Field', {
      *
      *        depends: [ 'firstName', 'lastName' ],
      *
-     *        // It should not be returned to the server - it's not a tableInfo field
+     *        // It should not be returned to the server - it's not a database field
      *        persist: false
      *     }
      *
@@ -526,7 +526,7 @@ Ext.define('Ext.data.field.Field', {
     /**
      * @cfg {String/Object} [reference]
      * The {@link Ext.data.Model#entityName name} of the entity referenced by this field.
-     * In most tableInfos, this relationship is represented by a "foreign key". That is, a
+     * In most databases, this relationship is represented by a "foreign key". That is, a
      * value for such a field matches the value of the {@link Ext.data.Model#idProperty id}
      * for an entity of this type.
      * 

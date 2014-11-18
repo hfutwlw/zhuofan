@@ -1,10 +1,10 @@
 /**
  * 控制器
  */
-Ext.define('app.view.main.MainController', {
+Ext.define('ZhuoFan.view.main.MainController', {
 	extend : 'Ext.app.ViewController',
 
-	requires : ['Ext.MessageBox', "app.view.main.window.ChangePasswordWin"],
+	requires : ['Ext.MessageBox', "ZhuoFan.view.main.window.ChangePasswordWin"],
 
 	alias : 'controller.main',
 	// 关于
@@ -22,7 +22,7 @@ Ext.define('app.view.main.MainController', {
 
 	// 显示修改密码弹出框
 	showChangePasswordWin : function() {
-		var win = new app.view.main.window.ChangePasswordWin();
+		var win = new ZhuoFan.view.main.window.ChangePasswordWin();
 		win.show();
 	},
 
@@ -30,7 +30,7 @@ Ext.define('app.view.main.MainController', {
 	treeClick : function(view, record) {
 		if (record.data.leaf) {
 			var maincenter = this.getView().down("maincenter");
-			var panel = Ext.ComponentQueryView.query("panel ['treeid='"+(record.data.id)+"']");
+			var panel = Ext.ComponentQuery.query("panel['treeid='"+(record.data.id)+"']");
 			if (!panel) {
 				var panel = Ext.create(record.data.id);
     			maincenter.setActiveTab(maincenter.add(panel));

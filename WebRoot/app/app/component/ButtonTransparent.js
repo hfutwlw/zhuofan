@@ -2,7 +2,7 @@
  * 显示时候按钮透明
  * 鼠标移上去取消透明
  */
-Ext.define("app.component.ButtonTransparent",{
+Ext.define("ZhuoFan.component.ButtonTransparent",{
 	extend : "Ext.button.Button",
 	alias : "widget.buttontransparent",
 

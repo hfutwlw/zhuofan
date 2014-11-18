@@ -1,4 +1,4 @@
-Ext.define("app.view.main.region.South",{
+Ext.define("ZhuoFan.view.main.region.South",{
 	extend : "Ext.toolbar.Toolbar",
 	alias : "widget.mainsouth",
 	

@@ -1,7 +1,7 @@
 /**
- * SQL proxy lets you store data in a SQL tableInfo.
+ * SQL proxy lets you store data in a SQL database.
  * The Sencha Touch SQL proxy outputs model data into an HTML5
- * local tableInfo using WebSQL.
+ * local database using WebSQL.
  *
  * You can create a Store for the proxy, for example:
  *
@@ -61,10 +61,10 @@ Ext.define('Ext.data.proxy.Sql', {
          */
         table: null,
         /**
-         * @cfg {String} tableInfo
-         * TableInfo name to access tables from
+         * @cfg {String} database
+         * Database name to access tables from
          */
-        tableInfo: 'Sencha',
+        database: 'Sencha',
 
         columns: '',
 
@@ -103,7 +103,7 @@ Ext.define('Ext.data.proxy.Sql', {
 
     create: function (operation, callback, scope) {
         var me = this,
-            db = me.getTableInfoObject(),
+            db = me.getDatabaseObject(),
             records = operation.getRecords(),
             tableExists = me.getTableExists();
 
@@ -140,7 +140,7 @@ Ext.define('Ext.data.proxy.Sql', {
 
     read: function(operation, callback, scope) {
         var me = this,
-            db = me.getTableInfoObject(),
+            db = me.getDatabaseObject(),
             model = me.getModel(),
             idProperty = model.getIdProperty(),
             tableExists = me.getTableExists(),
@@ -213,7 +213,7 @@ Ext.define('Ext.data.proxy.Sql', {
     update: function(operation, callback, scope) {
         var me = this,
             records = operation.getRecords(),
-            db = me.getTableInfoObject(),
+            db = me.getDatabaseObject(),
             tableExists = me.getTableExists();
 
         operation.setStarted();
@@ -250,7 +250,7 @@ Ext.define('Ext.data.proxy.Sql', {
     erase: function(operation, callback, scope) {
         var me = this,
             records = operation.getRecords(),
-            db = me.getTableInfoObject(),
+            db = me.getDatabaseObject(),
             tableExists = me.getTableExists();
 
         operation.setStarted();
@@ -664,7 +664,7 @@ Ext.define('Ext.data.proxy.Sql', {
             table = me.getTable(),
             callback = config ? config.callback : null,
             scope = config ? config.scope || me : null,
-            db = me.getTableInfoObject();
+            db = me.getDatabaseObject();
 
         db.transaction(function(transaction) {
                 transaction.executeSql('DROP TABLE ' + table);
@@ -684,7 +684,7 @@ Ext.define('Ext.data.proxy.Sql', {
         me.setTableExists(false);
     },
 
-    getTableInfoObject: function() {
-        return openTableInfo(this.getTableInfo(), '1.0', 'Sencha TableInfo', 5 * 1024 * 1024);
+    getDatabaseObject: function() {
+        return openDatabase(this.getDatabase(), '1.0', 'Sencha Database', 5 * 1024 * 1024);
     }
 });
