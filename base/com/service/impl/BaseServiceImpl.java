@@ -2,7 +2,10 @@ package com.service.impl;
 
 import java.io.Serializable;
 import java.util.List;
+
 import org.hibernate.criterion.Criterion;
+import org.springframework.stereotype.Component;
+
 import com.dao.BaseDao;
 import com.service.inter.BaseService;
 /**
@@ -11,6 +14,7 @@ import com.service.inter.BaseService;
  *
  * @param <T>
  */
+@Component
 public class BaseServiceImpl<T extends Serializable> implements BaseService<T> {
 	
 	protected BaseDao<T> baseDao;

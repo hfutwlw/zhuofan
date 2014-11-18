@@ -43,6 +43,7 @@ public class BaseDao<T extends Serializable>{
 	public Session getSession(){
 		if(null==session)
 		session = sessionFactory.getCurrentSession();
+		
 		return session;
 	}
 

@@ -23,7 +23,11 @@
     </bean>
 	
     <!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
+<<<<<<< HEAD
 	<context:component-scan base-package="com" use-default-filters="true">
+=======
+	<!-- <context:component-scan base-package="com" use-default-filters="false">
+>>>>>>> b9dedee77ec5919f38f41979f55fd0e60eb53925
     <context:include-filter type="regex" expression="com.*"/>
     <context:include-filter type="regex" expression="com.*.dao"/>
     <context:include-filter type="regex" expression="com.*.impl"/>    
@@ -31,8 +35,8 @@
     <context:include-filter type="regex" expression="com.*.*.impl"/>
     <context:include-filter type="regex" expression="com.*.action"/>
 	</context:component-scan>
-	
-
+	 -->
+<context:component-scan base-package="com"/>
 	   <!-- 数据源配置,使用应用内的jdbc数据库连接池 -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${jdbc.driver}" />
@@ -80,8 +84,12 @@
 </tx:attributes>
 </tx:advice>
  <aop:config >
+<<<<<<< HEAD
 <aop:pointcut id="ServiceOperation" expression="execution(* com.*.service.impl.*(..))"/>
 
+=======
+<aop:pointcut id="ServiceOperation" expression="execution(* com..*.*(..))"/>
+>>>>>>> b9dedee77ec5919f38f41979f55fd0e60eb53925
 <aop:advisor advice-ref="txAdvice" pointcut-ref="ServiceOperation"/>
 </aop:config>
 </beans>

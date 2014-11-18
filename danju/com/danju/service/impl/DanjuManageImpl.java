@@ -1,6 +1,8 @@
 package com.danju.service.impl;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,6 +21,11 @@ public class DanjuManageImpl extends BaseServiceImpl<Danju> implements DanjuMana
 	public void setDanjudao(DanjuDao danjudao) {
 		super.baseDao = danjudao;
 		this.danjudao = danjudao;
+	}
+	@Override
+	public List<Danju> findbyName(String name) throws Exception {
+		System.out.println(danjudao.findAll());
+		return null;
 	}
 	
 }

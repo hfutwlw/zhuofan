@@ -4,15 +4,16 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.domain.BaseEntity;
 import com.excel.ExportDomainExcelInter;
 
 
 /**
  * Danju entity. @author MyEclipse Persistence Tools
  */
-@Entity
 @Table(name="DANJU")
-public class Danju implements java.io.Serializable,ExportDomainExcelInter {
+@Entity
+public class Danju extends BaseEntity implements java.io.Serializable,ExportDomainExcelInter {
 
 	/**
 	 * 
@@ -20,128 +21,110 @@ public class Danju implements java.io.Serializable,ExportDomainExcelInter {
 	private static final long serialVersionUID = 316061454543547257L;
 	// Fields
 
-	@Column(name="DANJU_NAME",length=100)
+	
 	private String danjuName;
-	@Column(name="DANJU_CH_NAME",length=100)
+	
 	private String danjuChName;
-	@Column(name="_TYPE",length=100)
+	
 	private String type;
-	@Column(name="CREATE_PEOPLE",length=100)
+	
 	private String createPeople;
-	@Column(name="CREATE_DATE",length=100)
+	
 	private String createDate;
-	@Column(name="MODIFY_NAME",length=100)
+	
 	private String modifyPeople;
-	@Column(name="MODIFY_DATE",length=100)
+	
 	private String modifyDate;
-	@Column(name="INFO",length=100)
+	
 	private String info;
-	@Column(name="XML",length=10000)
+	
 	private String xml;
-	@Column(name="STRUTS2",length=9000)
+	
 	private String struts2;
 
-	// Constructors
-
-	/** default constructor */
-	public Danju() {
-	}
-
-	
-	// Property accessors
-
 	
 
+	@Column(name="DANJU_NAME",length=100)
 	public String getDanjuName() {
-		return this.danjuName;
+		return danjuName;
 	}
-
+	@Column(name="DANJU_CH_NAME",length=100)
 	public String getDanjuChName() {
 		return danjuChName;
 	}
-
-
-	public void setDanjuChName(String danjuChName) {
-		this.danjuChName = danjuChName;
+	@Column(name="TYPE_",length=100)
+	public String getType() {
+		return type;
 	}
-
-
+	@Column(name="CREATE_PEOPLE",length=100)
+	public String getCreatePeople() {
+		return createPeople;
+	}
+	@Column(name="CREATE_DATE",length=100)
 	public String getCreateDate() {
 		return createDate;
 	}
-
-
-	public void setCreateDate(String createDate) {
-		this.createDate = createDate;
-	}
-
-
+	@Column(name="MODIFY_NAME",length=100)
 	public String getModifyPeople() {
 		return modifyPeople;
 	}
-
-
-	public void setModifyPeople(String modifyPeople) {
-		this.modifyPeople = modifyPeople;
-	}
-
-
+	@Column(name="MODIFY_DATE",length=100)
 	public String getModifyDate() {
 		return modifyDate;
 	}
-
-
-	public void setModifyDate(String modifyDate) {
-		this.modifyDate = modifyDate;
+	@Column(name="INFO",length=100)
+	public String getInfo() {
+		return info;
 	}
-
+	@Column(name="XML",length=10000)
+	public String getXml() {
+		return xml;
+	}
+	@Column(name="STRUTS2",length=8000)
+	public String getStruts2() {
+		return struts2;
+	}
 
 	public void setDanjuName(String danjuName) {
 		this.danjuName = danjuName;
 	}
 
-	
-
-	public String getType() {
-		return this.type;
+	public void setDanjuChName(String danjuChName) {
+		this.danjuChName = danjuChName;
 	}
 
 	public void setType(String type) {
 		this.type = type;
 	}
 
-	public String getCreatePeople() {
-		return this.createPeople;
-	}
-
 	public void setCreatePeople(String createPeople) {
 		this.createPeople = createPeople;
 	}
 
-	
-	public String getInfo() {
-		return this.info;
+	public void setCreateDate(String createDate) {
+		this.createDate = createDate;
+	}
+
+	public void setModifyPeople(String modifyPeople) {
+		this.modifyPeople = modifyPeople;
+	}
+
+	public void setModifyDate(String modifyDate) {
+		this.modifyDate = modifyDate;
 	}
 
 	public void setInfo(String info) {
 		this.info = info;
 	}
 
-	public String getXml() {
-		return this.xml;
-	}
-
 	public void setXml(String xml) {
 		this.xml = xml;
-	}
-
-	public String getStruts2() {
-		return this.struts2;
 	}
 
 	public void setStruts2(String struts2) {
 		this.struts2 = struts2;
 	}
+
 	public String[] excelData() {
 		return new String[]{danjuName,danjuChName,type,createPeople,"",modifyPeople,"",info,xml,struts2};
 	}

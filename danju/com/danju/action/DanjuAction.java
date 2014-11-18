@@ -11,13 +11,14 @@ import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.json.annotations.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.danju.domain.Danju;
 import com.danju.service.inter.DanjuManage;
 import com.opensymphony.xwork2.ActionSupport;
 @ParentPackage("json-default")
 public class DanjuAction extends ActionSupport{
 
 	private static final long serialVersionUID = 88394041588346546L;
-	@Autowired
+	@Autowired 
 	private DanjuManage danjuManage;
 	private Map<String,Object> responseJson;
 	@JSON
@@ -45,7 +46,11 @@ public class DanjuAction extends ActionSupport{
 	@Override
 	@Action(value="/danju", results = { @Result(name = "success", type = "json") })
 	public String execute() throws Exception {
-		this.getList();		
+		this.getList();
+		Danju danju = new Danju();
+		danju.setInfo("first danju");
+		danjuManage.findbyName("dfg");
+		System.out.println(danjuManage.getClass().getSimpleName());
 		return SUCCESS;
 	}
 	
