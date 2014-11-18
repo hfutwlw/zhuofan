@@ -34,7 +34,6 @@ Ext.define('ZhuoFan.view.main.Main', {
 					}, {
 						region : 'center',
 						xtype : 'tabpanel',
-						id : "maincenter",
 						items : [{
 									title : 'Tab 1',
 									html : '<h2>卓凡平台</h2>'

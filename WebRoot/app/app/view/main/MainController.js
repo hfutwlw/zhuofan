@@ -4,7 +4,7 @@
 Ext.define('ZhuoFan.view.main.MainController', {
 	extend : 'Ext.app.ViewController',
 
-	requires : ['Ext.MessageBox', "ZhuoFan.view.main.window.ChangePasswordWin"],
+	requires : ['Ext.MessageBox', "ZhuoFan.view.main.window.ChangePasswordWin","ZhuoFan.view.dataquerymanage.DataQueryManage"],
 
 	alias : 'controller.main',
 	// 关于
@@ -29,13 +29,14 @@ Ext.define('ZhuoFan.view.main.MainController', {
 	// 树监听
 	treeClick : function(view, record) {
 		if (record.data.leaf) {
-			var maincenter = this.getView().down("maincenter");
-			var panel = Ext.ComponentQuery.query("panel['treeid='"+(record.data.id)+"']");
-			if (!panel) {
+			console.info(this.getView().down("tabpanel"))
+			var maincenter = this.getView().down("tabpanel");
+			var panel = Ext.ComponentQuery.query("panel[treeid="+(record.data.id)+"]");
+			if (!panel||panel.length==0) {
 				var panel = Ext.create(record.data.id);
     			maincenter.setActiveTab(maincenter.add(panel));
 			}else{
-			    maincenter.setActiveTab(panel);
+			    maincenter.setActiveTab(panel[0]);
 			}
 		}
 	},

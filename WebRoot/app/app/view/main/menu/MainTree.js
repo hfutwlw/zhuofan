@@ -55,7 +55,7 @@ Ext.define("ZhuoFan.view.main.menu.MainTree",{
 						text : "数据提取方案工具",
 						children : [{
 							text : "数据提取方案定义",
-							id : "DataQueryPanel",
+							id : "DataQueryManage",
 							leaf : true						
 						},{
 							text : "拷贝数据提取方案",
