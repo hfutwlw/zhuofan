@@ -6,7 +6,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/util"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/database"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/base"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/netservice"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/config"/>
         <property name="context-root" value="ZhuoFan"/>
